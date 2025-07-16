@@ -69,7 +69,7 @@ def load_spatial_data():
     try:
         # NOTE: Update these paths to be accessible by your Streamlit app
         # It's best to place them in the same directory or a subdirectory.
-        peatland_khGambut_gdf = gpd.read_file("INDONESIA PEATLAND 2017.zip")
+        peatland_khGambut_gdf = gpd.read_file("bali/INDONESIA PEATLAND 2017.zip")
         protected_areas_gdf = gpd.read_file("bali/bali_protected_areas.zip")
 
         # Ensure CRS is consistent (WGS84)
@@ -147,7 +147,7 @@ st.sidebar.caption(
 4. Click the three-dot icon in the topright corner and select 'Rerun' if you have submitted a new record
 """
 )
-st.sidebar.image('RCT_Logo.png', width=100)
+st.sidebar.image('bali/RCT_Logo.png', width=100)
 st.sidebar.caption("© 2025 ReClimaTech")
 
 # Initialize session state for farmer group selection if it doesn't exist
@@ -162,7 +162,7 @@ logo_col, title_col, submit_col, group_col = st.columns([2, 8, 2, 2])
 
 with logo_col:
     logo_container = st.container(border=True, height=120)
-    logo_container.image("RCT_Logo.png")
+    logo_container.image("bali/RCT_Logo.png")
 
 with title_col:
     title_container = st.container(border=True, height=120)
