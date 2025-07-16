@@ -485,9 +485,10 @@ with tabs[0]:
         legend_template = """
         {% macro html(this, kwargs) %}
         <div id="maplegend" class="maplegend"
-            style="position: absolute; top: 70px; left: 10px; z-index:1000; font-size:11px; font-family: 'Source Sans 3', sans-serif;">
+            style="position: absolute; top: 80px; left: 10px; z-index:1000; font-size:11px; font-family: 'Source Sans 3', sans-serif;">
             
             <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
             .maplegend .legend-toggle-label {
                 cursor: pointer; 
                 background-color: #FFFFFF; 
