@@ -1,0 +1,14 @@
+streamlit
+pandas
+geopandas
+plotly
+requests
+folium
+streamlit-folium
+json
+rasterio
+os
+numpy
+matplotlib
+branca
+jinja2
